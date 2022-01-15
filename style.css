@@ -1,0 +1,232 @@
+/* Lato font */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato&family=Libre+Baskerville&family=Merriweather:wght@700&family=Playfair+Display:wght@600&family=Poppins:wght@400;500&family=Roboto&family=Roboto+Slab&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #3a3a3a;
+}
+/* Menu header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.menu a {
+  margin-left: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+.fas {
+  font-size: 25px;
+}
+/* Main Section */
+/* Journey */
+.full-section {
+  margin: 0 100px;
+}
+.influencer-journey {
+  display: flex;
+}
+.title {
+  font-size: 50px;
+  font-weight: 900;
+}
+.journey-title p {
+  font-weight: 600;
+}
+.journey-title a {
+  text-decoration: none;
+  color: white;
+  background-color: #7d2ae8;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 25px;
+  transition: background-color ease-out 1s;
+}
+.journey-title a:hover {
+  background-color: #e02c6d;
+}
+.fa-arrow-right {
+  font-size: 15px;
+  padding-left: 10px;
+}
+.journey-photo img {
+  width: 450px;
+  height: 450px;
+  margin-bottom: 40px;
+  transition: width 1s, transform ease-out 1s;
+}
+.journey-photo img:hover {
+  width: 600px;
+  transform: rotate(360deg);
+}
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 15px;
+}
+/* Main Article */
+.collection h2 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.article-blog-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 35px;
+}
+.article {
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 25px grey;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: transform ease-out 1s;
+}
+.article:hover {
+  transform: scale(1.1);
+}
+.article .price {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 500;
+}
+.article .yellow {
+  color: #fb8200;
+  font-size: 13px;
+}
+.article .info {
+  font-size: 15px;
+  font-weight: 600;
+}
+.more {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: right;
+}
+.more a {
+  text-decoration: none;
+  color: #e02c6d;
+  padding: 5px 20px;
+  font-weight: 700;
+}
+/* Buy */
+.button {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.button a {
+  color: white;
+  margin-left: 50px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #7d2ae8;
+  border-radius: 15px;
+  transition: background-color ease-out 1s;
+}
+.button a:hover {
+  background-color: orange;
+}
+/* Login */
+.login-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.login-part .login {
+  width: 450px;
+  height: 535px;
+  padding: 10px 20px;
+  text-align: center;
+}
+.login img {
+  border-radius: 15px;
+  transition: transform 1s;
+}
+.login img:hover {
+  transform: scale(1.2);
+}
+#form input {
+  font-size: 16px;
+}
+.anchor {
+  margin-top: 50px;
+}
+
+.login-button {
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+.login-button a {
+  text-decoration: none;
+  background-color: #e02c6d;
+  border-radius: 10px;
+  padding: 10px 70px;
+  color: whitesmoke;
+  transition: backgrournd-color ease-out 1s;
+}
+.login-button a:hover {
+  background-color: rgb(133, 95, 9);
+}
+/* Footer */
+.footer-icon {
+  background-color: #0a0826;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer-blog,
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.footer-blog a .fab {
+  font-size: 25px;
+  margin: 0 10px;
+}
+/* Media Query */
+/* Mobile */
+@media only screen and (max-width: 688px) {
+  .main-header,
+  .influencer-journey {
+    width: 100%;
+    margin: 0 0;
+    flex-direction: column;
+  }
+  .article-blog-1 {
+    width: 100%;
+    margin: 0 0;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .button {
+    display: flex;
+    flex-direction: column;
+  }
+  .login-part {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer-icon {
+    width: 100%;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .article-blog-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .login-part {
+    flex-direction: column;
+  }
+}
